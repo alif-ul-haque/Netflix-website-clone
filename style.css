@@ -12,11 +12,10 @@ body{
 }
 .main{
       height : 644px;
-      width : 100%;
       background-image: url("bg.jpg");
       background-position: center center;
       background-size: max(1200px, 100vw);
-      /* background-size: cover; */
+      background-size: max(1200px,100vw);
       position: relative;
 }
 .main .box{
@@ -41,6 +40,8 @@ body{
 .logo img{
      width : 150px;
      height : 40px;
+     position: relative;
+     z-index: 10;
 }
 
 .navbar button{
@@ -52,4 +53,93 @@ body{
         color : white;
         font-size: 1rem;
         font-weight: 400;
+        position: relative;
+        z-index: 10;
+}
+
+.hero{
+      font-family: 'Martel Sans', sans-serif;
+      height: calc(100% - 100px);
+      display : flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color : white;
+      gap : 13px;
+      padding : 0 30px;
+      position: relative;
+      z-index: 10;
+}
+.first{
+     font-size : 3rem;
+     font-weight: 900;
+}
+.email{
+     font-family: 'Martel Sans', sans-serif;
+     text-align: center;
+     width : 320px;
+     height: 56px;
+     background-color: rgba(0, 0, 0, 0.557);
+     color : white;
+     border:.5px solid white;
+     border-radius: 4px;
+     margin-right : 5px;
+
+}
+
+.hero-button button{
+         font-family: 'Martel Sans', sans-serif;
+         width : 180px;
+         height : 56px;
+         border : none;
+         background-color: rgba(229, 9, 20);
+         color : white;
+         border-radius: 4px;
+         font-size: 1.2rem;
+         font-weight: 700;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.first-section{
+     width : 855px;
+     height : 256px;
+     /* background-color: green; */
+     margin-left: 200px;
+     margin-right: 100px;
+     margin-top: 80px;
+}
+
+.Trend{
+    font : 'Poppins', sans-serif;
+    color : white;
+}
+
+.movies{
+    display : flex;
+}
+
+.mv{
+    width : 150px;
+    height : 200px;
+    /* background-color: blue; */
+    margin-left: 20px;
+    margin-top: 10px;
+    /* border : 2px solid white; */
+    border-radius: 9px;
+}
+
+.mv img{
+     height : 100%;
+     width : 100%;
+     object-fit: cover;
+     border-radius : 7px;
 }
